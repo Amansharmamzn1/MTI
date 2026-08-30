@@ -3,32 +3,33 @@ const products = [
     {
         name: "Automatic Sanitary Napkin Vending Machine",
         desc: "High-capacity automated dispensing solution for commercial and public restrooms.",
-        icon: "fa-box-open" // FontAwesome icon acting as placeholder image
+        //icon: "fa-box-open" // FontAwesome icon acting as placeholder image
+        image: "image/asvm.jpeg"
     },
     {
         name: "Automatic Napkin Incinerator",
         desc: "Eco-friendly, electric disposal system ensuring safe and hygienic waste management.",
-        icon: "fa-fire"
+        image: "image/inci.jpeg"
     },
     {
         name: "Cloth Bag Vending Machine",
         desc: "Promote sustainability with an automated cloth bag dispenser for retail environments.",
-        icon: "fa-bag-shopping"
+        image: "image/cloth bag.jpeg"
     },
     {
         name: "VSWR & Frequency Meters",
         desc: "Precision microwave and waveguide testing instruments for advanced industrial applications.",
-        icon: "fa-wave-square"
+        image: "image/vswr.jpeg"
     },
     {
         name: "Gunn Power Supply",
         desc: "Highly stable and reliable industrial power supplies for technical environments.",
-        icon: "fa-plug"
+        image: "image/gunn.jpeg"
     },
     {
         name: "Solar Operated Vending Machine",
         desc: "Energy-efficient sanitary dispensing powered purely by solar energy.",
-        icon: "fa-solar-panel"
+        image: "image/solr.jpeg"
     }
 ];
 
@@ -41,7 +42,7 @@ function renderProducts() {
         card.className = 'product-card';
         card.innerHTML = `
             <div class="product-img">
-                <i class="fa-solid ${product.icon}"></i>
+                <img src="${product.image}" alt="${product.name}" class="product-photo">
             </div>
             <div class="product-info">
                 <h3>${product.name}</h3>

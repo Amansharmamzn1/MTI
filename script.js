@@ -14,7 +14,7 @@ const products = [
     {
         name: "Cloth Bag Vending Machine",
         desc: "Promote sustainability with an automated cloth bag dispenser for retail environments.",
-        image: "image/cloth bag.jpeg"
+        image: "image/cloth.jpeg"
     },
     {
         name: "VSWR & Frequency Meters",

@@ -102,12 +102,17 @@
         <div class="modal-content">
             <span class="close-btn" onclick="closeQuoteModal()">&times;</span>
             <h2>Request a Quotation</h2>
-            <form action="https://api.web3forms.com/submit" method="POST">
+<form id="quote-form" action="https://api.web3forms.com/submit" method="POST">
+    <!-- Replace this value with your actual web3forms-- access key -->
+
   <input type="hidden" name="access_key" value="1abb6919-317a-4ca5-9e40-01c41e620c2c">
-  <input type="text" name="name" required>
-  <input type="email" name="email" required>
-  <textarea name="message" required></textarea>
-  <button type="submit">Submit</button>
+  <input type="text" name="name" placeholder="Your Name / Company Name" required>
+    
+    <input type="tel" name="phone" placeholder="Mobile Number" required>
+    
+    <textarea name="message" placeholder="Tell us about your requirements..." rows="4" required></textarea>
+    
+    <button type="submit" class="btn btn-primary w-100">Send Inquiry</button>
 </form>
         </div>
     </div>

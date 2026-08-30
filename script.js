@@ -72,12 +72,12 @@ window.onclick = function(event) {
 }
 
 // Form Submission handling (Prevent default reload)
-document.getElementById('quote-form').addEventListener('submit', function(e) {
+/*document.getElementById('quote-form').addEventListener('submit', function(e) {
     e.preventDefault();
     alert("Thank you! Your inquiry has been sent to Micro Tech Instruments.");
     closeQuoteModal();
     this.reset();
-});
+});*/
 
 // Sticky Header Effect on Scroll
 window.addEventListener('scroll', () => {
